@@ -1,0 +1,6 @@
+{
+  "name": "BobaPop: Sweet Drop",
+  "description": "A delightful, cozy mobile-first 2D physics merge game where you drop and combine cute boba pearls in a warm milk tea aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

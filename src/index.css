@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Fredoka', 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    touch-action: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    overscroll-behavior: none;
+  }
+}
+
+/* Safe area insets for notched iPhones and mobile home bars */
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@keyframes floatBubble {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(3deg);
+  }
+}
+
+.animate-float-subtle {
+  animation: floatBubble 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(251, 146, 60, 0.15), 0 0 50px rgba(244, 114, 182, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(251, 146, 60, 0.25), 0 0 70px rgba(244, 114, 182, 0.18);
+  }
+}
+
+.ambient-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+
